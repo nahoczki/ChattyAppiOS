@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9C1EFD64253616CE003A044A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD63253616CE003A044A /* AppDelegate.swift */; };
 		9C1EFD66253616CE003A044A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD65253616CE003A044A /* SceneDelegate.swift */; };
-		9C1EFD68253616CE003A044A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD67253616CE003A044A /* ViewController.swift */; };
 		9C1EFD6B253616CE003A044A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFD69253616CE003A044A /* Main.storyboard */; };
 		9C1EFD6D253616CF003A044A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFD6C253616CF003A044A /* Assets.xcassets */; };
 		9C1EFD70253616CF003A044A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFD6E253616CF003A044A /* LaunchScreen.storyboard */; };
 		9C1EFD7B253616CF003A044A /* ChattyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD7A253616CF003A044A /* ChattyAppTests.swift */; };
 		9C1EFD86253616CF003A044A /* ChattyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD85253616CF003A044A /* ChattyAppUITests.swift */; };
+		9C1EFDA525361CEF003A044A /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFDA425361CEF003A044A /* Authentication.storyboard */; };
+		9C1EFDAC253635AB003A044A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDAB253635AB003A044A /* LoginViewController.swift */; };
+		9C1EFDB22536360D003A044A /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDB12536360D003A044A /* UnderlinedTextField.swift */; };
+		9C1EFDBA25363668003A044A /* CustomSpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDB925363668003A044A /* CustomSpinnerButton.swift */; };
 		C2F9DF7C81979D30484548DC /* Pods_ChattyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D46EEEBB99BA2DA8026DBE /* Pods_ChattyAppTests.framework */; };
 		D6D1510A07132685D17C3E23 /* Pods_ChattyApp_ChattyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81163073C8350BD9502BC181 /* Pods_ChattyApp_ChattyAppUITests.framework */; };
 		D7EDE16EABEDCB79130A93BF /* Pods_ChattyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D482C6DDB330279D2E6F382 /* Pods_ChattyApp.framework */; };
@@ -45,7 +48,6 @@
 		9C1EFD60253616CE003A044A /* ChattyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChattyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EFD63253616CE003A044A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1EFD65253616CE003A044A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C1EFD67253616CE003A044A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C1EFD6A253616CE003A044A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1EFD6C253616CF003A044A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C1EFD6F253616CF003A044A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,10 @@
 		9C1EFD81253616CF003A044A /* ChattyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChattyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EFD85253616CF003A044A /* ChattyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattyAppUITests.swift; sourceTree = "<group>"; };
 		9C1EFD87253616CF003A044A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1EFDA425361CEF003A044A /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		9C1EFDAB253635AB003A044A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9C1EFDB12536360D003A044A /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		9C1EFDB925363668003A044A /* CustomSpinnerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSpinnerButton.swift; sourceTree = "<group>"; };
 		9D91017C2E81A843DFF79BBF /* Pods-ChattyApp-ChattyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp-ChattyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ChattyApp-ChattyAppUITests/Pods-ChattyApp-ChattyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD9AD7CD2A105B4F42702CFB /* Pods-ChattyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp.debug.xcconfig"; path = "Target Support Files/Pods-ChattyApp/Pods-ChattyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AE175354C6D6FA8E78A63C06 /* Pods-ChattyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChattyAppTests/Pods-ChattyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,9 +132,11 @@
 		9C1EFD62253616CE003A044A /* ChattyApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C1EFDB0253635E5003A044A /* CustomComponents */,
+				9C1EFDA92536356C003A044A /* ViewControllers */,
+				9C1EFDA325361BDD003A044A /* Storyboards */,
 				9C1EFD63253616CE003A044A /* AppDelegate.swift */,
 				9C1EFD65253616CE003A044A /* SceneDelegate.swift */,
-				9C1EFD67253616CE003A044A /* ViewController.swift */,
 				9C1EFD69253616CE003A044A /* Main.storyboard */,
 				9C1EFD6C253616CF003A044A /* Assets.xcassets */,
 				9C1EFD6E253616CF003A044A /* LaunchScreen.storyboard */,
@@ -155,6 +163,39 @@
 			path = ChattyAppUITests;
 			sourceTree = "<group>";
 		};
+		9C1EFDA325361BDD003A044A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9C1EFDA425361CEF003A044A /* Authentication.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9C1EFDA92536356C003A044A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C1EFDAA25363581003A044A /* Auth */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9C1EFDAA25363581003A044A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9C1EFDAB253635AB003A044A /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9C1EFDB0253635E5003A044A /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9C1EFDB925363668003A044A /* CustomSpinnerButton.swift */,
+				9C1EFDB12536360D003A044A /* UnderlinedTextField.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
 		EC405D042E38B7FC4FBC9CBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +206,6 @@
 				AE175354C6D6FA8E78A63C06 /* Pods-ChattyAppTests.debug.xcconfig */,
 				FA5BD739FA48E48F5E1B41E9 /* Pods-ChattyAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1EFDA525361CEF003A044A /* Authentication.storyboard in Resources */,
 				9C1EFD70253616CF003A044A /* LaunchScreen.storyboard in Resources */,
 				9C1EFD6D253616CF003A044A /* Assets.xcassets in Resources */,
 				9C1EFD6B253616CE003A044A /* Main.storyboard in Resources */,
@@ -407,9 +448,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1EFD68253616CE003A044A /* ViewController.swift in Sources */,
+				9C1EFDAC253635AB003A044A /* LoginViewController.swift in Sources */,
 				9C1EFD64253616CE003A044A /* AppDelegate.swift in Sources */,
+				9C1EFDBA25363668003A044A /* CustomSpinnerButton.swift in Sources */,
 				9C1EFD66253616CE003A044A /* SceneDelegate.swift in Sources */,
+				9C1EFDB22536360D003A044A /* UnderlinedTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iUl-Aa-aYY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Aoa-gi-hn4">
+            <objects>
+                <viewController id="iUl-Aa-aYY" customClass="LoginViewController" customModule="ChattyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oeP-Oh-QIV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ham-GJ-BGv">
+                                <rect key="frame" x="30" y="154" width="354" height="658"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="N0a-kU-i3e">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="63.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gaT-zG-CWf">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="40.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="zaq-Vy-sqe">
+                                                <rect key="frame" x="0.0" y="40.5" width="354" height="23"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oZ5-oS-1ks">
+                                        <rect key="frame" x="0.0" y="192" width="354" height="212.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xB3-Fh-mCf">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xpm-oL-JLZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhe-C3-zCM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="26.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuj-LL-BiH" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="26.5" width="354" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="yzo-jZ-Wik"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="mGB-Lw-4Kk">
+                                                <rect key="frame" x="0.0" y="96.5" width="354" height="116"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="YSl-Pv-dSh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="71"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYo-Ee-iCI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="26"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSQ-Mn-Xdf" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="26" width="354" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="0Vc-R0-zoB">
+                                                        <rect key="frame" x="0.0" y="71" width="354" height="45"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-yy-Kr5">
+                                                                <rect key="frame" x="240" y="0.0" width="114" height="45"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                                <state key="normal" title="Forgot Password">
+                                                                    <color key="titleColor" systemColor="systemPurpleColor"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kuj-LL-BiH" firstAttribute="height" secondItem="ypz-yy-Kr5" secondAttribute="height" id="6yg-VO-ZmB"/>
+                                            <constraint firstItem="zYo-Ee-iCI" firstAttribute="height" secondItem="Hhe-C3-zCM" secondAttribute="height" id="NGQ-eo-Nqo"/>
+                                            <constraint firstItem="kuj-LL-BiH" firstAttribute="height" secondItem="rSQ-Mn-Xdf" secondAttribute="height" id="x4b-uY-PTp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bz3-Zt-Cf9">
+                                        <rect key="frame" x="0.0" y="533" width="354" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCe-xT-ZOC" customClass="CustomSpinnerButton" customModule="ChattyApp" customModuleProvider="target">
+                                                <rect key="frame" x="153.5" y="0.0" width="47" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="r6N-vD-KmY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginPress:" destination="iUl-Aa-aYY" eventType="touchUpInside" id="gd8-lH-e3Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVD-im-PB3">
+                                                <rect key="frame" x="72.5" y="50" width="209" height="46"/>
+                                                <state key="normal" title="Don't have an account? Create">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Don't have an account?">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="15" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="systemPurpleColor"/>
+                                                                <font key="NSFont" size="15" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="Create">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="systemPurpleColor"/>
+                                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                                                <font key="NSOriginalFont" size="15" name="Helvetica-Bold"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NFF-Cg-laJ">
+                                                <rect key="frame" x="159" y="96" width="36" height="29"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aZC-7V-7Qw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ham-GJ-BGv" firstAttribute="leading" secondItem="aZC-7V-7Qw" secondAttribute="leading" constant="30" id="IeA-qr-JaY"/>
+                            <constraint firstItem="ham-GJ-BGv" firstAttribute="top" secondItem="aZC-7V-7Qw" secondAttribute="top" constant="110" id="XK3-wY-RS7"/>
+                            <constraint firstItem="aZC-7V-7Qw" firstAttribute="trailing" secondItem="ham-GJ-BGv" secondAttribute="trailing" constant="30" id="abG-dc-tRz"/>
+                            <constraint firstItem="aZC-7V-7Qw" firstAttribute="bottom" secondItem="ham-GJ-BGv" secondAttribute="bottom" constant="50" id="uBi-Vk-0oS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="kuj-LL-BiH" id="vVm-2V-evJ"/>
+                        <outlet property="errorLabel" destination="NFF-Cg-laJ" id="c8j-Pz-6B6"/>
+                        <outlet property="loginButton" destination="qCe-xT-ZOC" id="KhI-hk-Oiu"/>
+                        <outlet property="passTextField" destination="rSQ-Mn-Xdf" id="Ya3-K8-uVV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJm-Xr-0jT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482" y="-95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
