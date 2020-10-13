@@ -15,6 +15,9 @@
 		9C1EFD70253616CF003A044A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFD6E253616CF003A044A /* LaunchScreen.storyboard */; };
 		9C1EFD7B253616CF003A044A /* ChattyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD7A253616CF003A044A /* ChattyAppTests.swift */; };
 		9C1EFD86253616CF003A044A /* ChattyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD85253616CF003A044A /* ChattyAppUITests.swift */; };
+		C2F9DF7C81979D30484548DC /* Pods_ChattyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D46EEEBB99BA2DA8026DBE /* Pods_ChattyAppTests.framework */; };
+		D6D1510A07132685D17C3E23 /* Pods_ChattyApp_ChattyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81163073C8350BD9502BC181 /* Pods_ChattyApp_ChattyAppUITests.framework */; };
+		D7EDE16EABEDCB79130A93BF /* Pods_ChattyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D482C6DDB330279D2E6F382 /* Pods_ChattyApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		094D858F8FC5B3EA0EFB10EC /* Pods-ChattyApp-ChattyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp-ChattyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChattyApp-ChattyAppUITests/Pods-ChattyApp-ChattyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D482C6DDB330279D2E6F382 /* Pods_ChattyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E27F57A0ECE9C25F6AC34D /* Pods-ChattyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp.release.xcconfig"; path = "Target Support Files/Pods-ChattyApp/Pods-ChattyApp.release.xcconfig"; sourceTree = "<group>"; };
+		81163073C8350BD9502BC181 /* Pods_ChattyApp_ChattyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattyApp_ChattyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EFD60253616CE003A044A /* ChattyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChattyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EFD63253616CE003A044A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1EFD65253616CE003A044A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		9C1EFD81253616CF003A044A /* ChattyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChattyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EFD85253616CF003A044A /* ChattyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattyAppUITests.swift; sourceTree = "<group>"; };
 		9C1EFD87253616CF003A044A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D91017C2E81A843DFF79BBF /* Pods-ChattyApp-ChattyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp-ChattyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ChattyApp-ChattyAppUITests/Pods-ChattyApp-ChattyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD9AD7CD2A105B4F42702CFB /* Pods-ChattyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp.debug.xcconfig"; path = "Target Support Files/Pods-ChattyApp/Pods-ChattyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AE175354C6D6FA8E78A63C06 /* Pods-ChattyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChattyAppTests/Pods-ChattyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6D46EEEBB99BA2DA8026DBE /* Pods_ChattyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5BD739FA48E48F5E1B41E9 /* Pods-ChattyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChattyAppTests/Pods-ChattyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7EDE16EABEDCB79130A93BF /* Pods_ChattyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F9DF7C81979D30484548DC /* Pods_ChattyAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D1510A07132685D17C3E23 /* Pods_ChattyApp_ChattyAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3895DFC2938B16A0571E9620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D482C6DDB330279D2E6F382 /* Pods_ChattyApp.framework */,
+				81163073C8350BD9502BC181 /* Pods_ChattyApp_ChattyAppUITests.framework */,
+				E6D46EEEBB99BA2DA8026DBE /* Pods_ChattyAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C1EFD57253616CE003A044A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				9C1EFD79253616CF003A044A /* ChattyAppTests */,
 				9C1EFD84253616CF003A044A /* ChattyAppUITests */,
 				9C1EFD61253616CE003A044A /* Products */,
+				EC405D042E38B7FC4FBC9CBD /* Pods */,
+				3895DFC2938B16A0571E9620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,20 @@
 			path = ChattyAppUITests;
 			sourceTree = "<group>";
 		};
+		EC405D042E38B7FC4FBC9CBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD9AD7CD2A105B4F42702CFB /* Pods-ChattyApp.debug.xcconfig */,
+				53E27F57A0ECE9C25F6AC34D /* Pods-ChattyApp.release.xcconfig */,
+				094D858F8FC5B3EA0EFB10EC /* Pods-ChattyApp-ChattyAppUITests.debug.xcconfig */,
+				9D91017C2E81A843DFF79BBF /* Pods-ChattyApp-ChattyAppUITests.release.xcconfig */,
+				AE175354C6D6FA8E78A63C06 /* Pods-ChattyAppTests.debug.xcconfig */,
+				FA5BD739FA48E48F5E1B41E9 /* Pods-ChattyAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C1EFD8A253616CF003A044A /* Build configuration list for PBXNativeTarget "ChattyApp" */;
 			buildPhases = (
+				A1D78603B02236A0DC0886B1 /* [CP] Check Pods Manifest.lock */,
 				9C1EFD5C253616CE003A044A /* Sources */,
 				9C1EFD5D253616CE003A044A /* Frameworks */,
 				9C1EFD5E253616CE003A044A /* Resources */,
+				33DA1D90085657144007B97E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C1EFD8D253616CF003A044A /* Build configuration list for PBXNativeTarget "ChattyAppTests" */;
 			buildPhases = (
+				C8C48737C8CF6CB42A1A710D /* [CP] Check Pods Manifest.lock */,
 				9C1EFD72253616CF003A044A /* Sources */,
 				9C1EFD73253616CF003A044A /* Frameworks */,
 				9C1EFD74253616CF003A044A /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C1EFD90253616CF003A044A /* Build configuration list for PBXNativeTarget "ChattyAppUITests" */;
 			buildPhases = (
+				687B4F53CE56D5C88F2A8A82 /* [CP] Check Pods Manifest.lock */,
 				9C1EFD7D253616CF003A044A /* Sources */,
 				9C1EFD7E253616CF003A044A /* Frameworks */,
 				9C1EFD7F253616CF003A044A /* Resources */,
+				A6CD520689A407AE5F5F48EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33DA1D90085657144007B97E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChattyApp/Pods-ChattyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChattyApp/Pods-ChattyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChattyApp/Pods-ChattyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		687B4F53CE56D5C88F2A8A82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChattyApp-ChattyAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D78603B02236A0DC0886B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChattyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6CD520689A407AE5F5F48EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChattyApp-ChattyAppUITests/Pods-ChattyApp-ChattyAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChattyApp-ChattyAppUITests/Pods-ChattyApp-ChattyAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChattyApp-ChattyAppUITests/Pods-ChattyApp-ChattyAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C48737C8CF6CB42A1A710D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChattyAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C1EFD5C253616CE003A044A /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		9C1EFD8B253616CF003A044A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD9AD7CD2A105B4F42702CFB /* Pods-ChattyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +602,7 @@
 		};
 		9C1EFD8C253616CF003A044A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E27F57A0ECE9C25F6AC34D /* Pods-ChattyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +622,7 @@
 		};
 		9C1EFD8E253616CF003A044A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE175354C6D6FA8E78A63C06 /* Pods-ChattyAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +645,7 @@
 		};
 		9C1EFD8F253616CF003A044A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5BD739FA48E48F5E1B41E9 /* Pods-ChattyAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +668,7 @@
 		};
 		9C1EFD91253616CF003A044A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094D858F8FC5B3EA0EFB10EC /* Pods-ChattyApp-ChattyAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +689,7 @@
 		};
 		9C1EFD92253616CF003A044A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D91017C2E81A843DFF79BBF /* Pods-ChattyApp-ChattyAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
