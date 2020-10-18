@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UnderlinedTextField!
     @IBOutlet weak var passTextField: UnderlinedTextField!
     
-    var press = true
+    let api = ApiCalls()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,8 @@ class LoginViewController: UIViewController {
         let screenSize: CGRect = UIScreen.main.bounds
         loginButton.widthAnchor.constraint(equalToConstant: screenSize.width - (50 * 2)).isActive = true
         
+        errorLabel.alpha = 0
+        
         emailTextField.addTarget(self, action: #selector(textFieldDidStartEditing), for: .editingDidBegin)
         passTextField.addTarget(self, action: #selector(textFieldDidStartEditing), for: .editingDidBegin)
         emailTextField.addTarget(self, action: #selector(textFieldDidStopEditing), for: .editingDidEnd)
@@ -38,6 +40,11 @@ class LoginViewController: UIViewController {
         
         emailTextField.addBottomBorder()
         passTextField.addBottomBorder()
+    }
+    
+    func showErrorLabel(_ errorMessage: String) {
+        errorLabel.text = errorMessage
+        errorLabel.alpha = 1
     }
     
     @objc private func textFieldDidStartEditing(_ sender: UnderlinedTextField) {
@@ -49,10 +56,37 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginPress(_ sender: CustomSpinnerButton) {
-        sender.startLoading()
         
-        _ = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { timer in
+        guard let email = emailTextField.text else {
+            showErrorLabel("Email field cannot be empty")
+            return
+        }
+        
+        guard let pass = passTextField.text else {
+            showErrorLabel("Password field cannot be empty")
+            return
+        }
+        
+        let cleanedEmail = email.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if (cleanedEmail.isEmpty || pass.isEmpty) {
+            showErrorLabel("One or more fields are empty")
+            return
+        }
+        
+        sender.startLoading()
+        api.login(email: cleanedEmail, pass: pass) { (err) in
+            print("complete")
+            if let err = err {
+                self.showErrorLabel(err.message)
+                sender.stopLoading()
+                return
+            }
+            
+            print("LOGGED IN")
             sender.stopLoading()
+            
+            self.performSegue(withIdentifier: "login", sender: self)
         }
     }
     

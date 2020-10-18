@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0407752536991E00C5355F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0407742536991E00C5355F /* Main.storyboard */; };
+		9C04077B25369C6C00C5355F /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04077A25369C6C00C5355F /* MessagesTableViewController.swift */; };
+		9C0407802536CC0D00C5355F /* Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04077F2536CC0D00C5355F /* Placeholders.swift */; };
+		9C04078525379E0400C5355F /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04078425379E0400C5355F /* ChatRoomViewController.swift */; };
+		9C04078B2537A0F000C5355F /* RecipientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04078A2537A0F000C5355F /* RecipientCell.swift */; };
+		9C0407932537A10F00C5355F /* SenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0407922537A10F00C5355F /* SenderCell.swift */; };
+		9C183F9D2537F6400059C7CC /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C183F9C2537F6400059C7CC /* UsersViewController.swift */; };
 		9C1EFD64253616CE003A044A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD63253616CE003A044A /* AppDelegate.swift */; };
 		9C1EFD66253616CE003A044A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD65253616CE003A044A /* SceneDelegate.swift */; };
-		9C1EFD6B253616CE003A044A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFD69253616CE003A044A /* Main.storyboard */; };
 		9C1EFD6D253616CF003A044A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFD6C253616CF003A044A /* Assets.xcassets */; };
 		9C1EFD70253616CF003A044A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFD6E253616CF003A044A /* LaunchScreen.storyboard */; };
 		9C1EFD7B253616CF003A044A /* ChattyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFD7A253616CF003A044A /* ChattyAppTests.swift */; };
@@ -18,6 +24,8 @@
 		9C1EFDAC253635AB003A044A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDAB253635AB003A044A /* LoginViewController.swift */; };
 		9C1EFDB22536360D003A044A /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDB12536360D003A044A /* UnderlinedTextField.swift */; };
 		9C1EFDBA25363668003A044A /* CustomSpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDB925363668003A044A /* CustomSpinnerButton.swift */; };
+		9C1EFDC325366492003A044A /* ApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDC225366492003A044A /* ApiCalls.swift */; };
+		9CA930372539721600AC44DD /* SocketWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA930362539721600AC44DD /* SocketWorker.swift */; };
 		C2F9DF7C81979D30484548DC /* Pods_ChattyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D46EEEBB99BA2DA8026DBE /* Pods_ChattyAppTests.framework */; };
 		D6D1510A07132685D17C3E23 /* Pods_ChattyApp_ChattyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81163073C8350BD9502BC181 /* Pods_ChattyApp_ChattyAppUITests.framework */; };
 		D7EDE16EABEDCB79130A93BF /* Pods_ChattyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D482C6DDB330279D2E6F382 /* Pods_ChattyApp.framework */; };
@@ -45,10 +53,16 @@
 		2D482C6DDB330279D2E6F382 /* Pods_ChattyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E27F57A0ECE9C25F6AC34D /* Pods-ChattyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp.release.xcconfig"; path = "Target Support Files/Pods-ChattyApp/Pods-ChattyApp.release.xcconfig"; sourceTree = "<group>"; };
 		81163073C8350BD9502BC181 /* Pods_ChattyApp_ChattyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattyApp_ChattyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0407742536991E00C5355F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9C04077A25369C6C00C5355F /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		9C04077F2536CC0D00C5355F /* Placeholders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholders.swift; sourceTree = "<group>"; };
+		9C04078425379E0400C5355F /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		9C04078A2537A0F000C5355F /* RecipientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCell.swift; sourceTree = "<group>"; };
+		9C0407922537A10F00C5355F /* SenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderCell.swift; sourceTree = "<group>"; };
+		9C183F9C2537F6400059C7CC /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		9C1EFD60253616CE003A044A /* ChattyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChattyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EFD63253616CE003A044A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1EFD65253616CE003A044A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C1EFD6A253616CE003A044A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1EFD6C253616CF003A044A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C1EFD6F253616CF003A044A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C1EFD71253616CF003A044A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +76,8 @@
 		9C1EFDAB253635AB003A044A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9C1EFDB12536360D003A044A /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		9C1EFDB925363668003A044A /* CustomSpinnerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSpinnerButton.swift; sourceTree = "<group>"; };
+		9C1EFDC225366492003A044A /* ApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCalls.swift; sourceTree = "<group>"; };
+		9CA930362539721600AC44DD /* SocketWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketWorker.swift; sourceTree = "<group>"; };
 		9D91017C2E81A843DFF79BBF /* Pods-ChattyApp-ChattyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp-ChattyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ChattyApp-ChattyAppUITests/Pods-ChattyApp-ChattyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD9AD7CD2A105B4F42702CFB /* Pods-ChattyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp.debug.xcconfig"; path = "Target Support Files/Pods-ChattyApp/Pods-ChattyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AE175354C6D6FA8E78A63C06 /* Pods-ChattyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChattyAppTests/Pods-ChattyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +123,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9C04077925369C4400C5355F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9C0407892537A0B400C5355F /* MessageCells */,
+				9C04077A25369C6C00C5355F /* MessagesTableViewController.swift */,
+				9C04078425379E0400C5355F /* ChatRoomViewController.swift */,
+				9C183F9C2537F6400059C7CC /* UsersViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9C0407892537A0B400C5355F /* MessageCells */ = {
+			isa = PBXGroup;
+			children = (
+				9C04078A2537A0F000C5355F /* RecipientCell.swift */,
+				9C0407922537A10F00C5355F /* SenderCell.swift */,
+			);
+			path = MessageCells;
+			sourceTree = "<group>";
+		};
 		9C1EFD57253616CE003A044A = {
 			isa = PBXGroup;
 			children = (
@@ -132,15 +168,16 @@
 		9C1EFD62253616CE003A044A /* ChattyApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C1EFDC12536647F003A044A /* Networking */,
 				9C1EFDB0253635E5003A044A /* CustomComponents */,
 				9C1EFDA92536356C003A044A /* ViewControllers */,
 				9C1EFDA325361BDD003A044A /* Storyboards */,
 				9C1EFD63253616CE003A044A /* AppDelegate.swift */,
 				9C1EFD65253616CE003A044A /* SceneDelegate.swift */,
-				9C1EFD69253616CE003A044A /* Main.storyboard */,
 				9C1EFD6C253616CF003A044A /* Assets.xcassets */,
 				9C1EFD6E253616CF003A044A /* LaunchScreen.storyboard */,
 				9C1EFD71253616CF003A044A /* Info.plist */,
+				9C04077F2536CC0D00C5355F /* Placeholders.swift */,
 			);
 			path = ChattyApp;
 			sourceTree = "<group>";
@@ -167,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1EFDA425361CEF003A044A /* Authentication.storyboard */,
+				9C0407742536991E00C5355F /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -174,6 +212,7 @@
 		9C1EFDA92536356C003A044A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9C04077925369C4400C5355F /* Main */,
 				9C1EFDAA25363581003A044A /* Auth */,
 			);
 			path = ViewControllers;
@@ -194,6 +233,15 @@
 				9C1EFDB12536360D003A044A /* UnderlinedTextField.swift */,
 			);
 			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		9C1EFDC12536647F003A044A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9C1EFDC225366492003A044A /* ApiCalls.swift */,
+				9CA930362539721600AC44DD /* SocketWorker.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		EC405D042E38B7FC4FBC9CBD /* Pods */ = {
@@ -320,7 +368,7 @@
 				9C1EFDA525361CEF003A044A /* Authentication.storyboard in Resources */,
 				9C1EFD70253616CF003A044A /* LaunchScreen.storyboard in Resources */,
 				9C1EFD6D253616CF003A044A /* Assets.xcassets in Resources */,
-				9C1EFD6B253616CE003A044A /* Main.storyboard in Resources */,
+				9C0407752536991E00C5355F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,10 +497,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1EFDAC253635AB003A044A /* LoginViewController.swift in Sources */,
+				9C183F9D2537F6400059C7CC /* UsersViewController.swift in Sources */,
+				9C04078B2537A0F000C5355F /* RecipientCell.swift in Sources */,
 				9C1EFD64253616CE003A044A /* AppDelegate.swift in Sources */,
+				9C04077B25369C6C00C5355F /* MessagesTableViewController.swift in Sources */,
+				9C0407802536CC0D00C5355F /* Placeholders.swift in Sources */,
+				9CA930372539721600AC44DD /* SocketWorker.swift in Sources */,
+				9C0407932537A10F00C5355F /* SenderCell.swift in Sources */,
 				9C1EFDBA25363668003A044A /* CustomSpinnerButton.swift in Sources */,
 				9C1EFD66253616CE003A044A /* SceneDelegate.swift in Sources */,
+				9C1EFDC325366492003A044A /* ApiCalls.swift in Sources */,
 				9C1EFDB22536360D003A044A /* UnderlinedTextField.swift in Sources */,
+				9C04078525379E0400C5355F /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,14 +544,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9C1EFD69253616CE003A044A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C1EFD6A253616CE003A044A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C1EFD6E253616CF003A044A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

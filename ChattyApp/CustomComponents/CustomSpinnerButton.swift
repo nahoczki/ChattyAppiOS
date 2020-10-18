@@ -52,7 +52,7 @@ class CustomSpinnerButton: UIButton {
         
         constraint.constant = screenSize.width - (50 * 2)
         
-        self.spinner.removeFromSuperview()
+        
         
         UIView.animate(withDuration: 0.5) {
             self.layer.cornerRadius = 0
@@ -60,7 +60,9 @@ class CustomSpinnerButton: UIButton {
             self.layoutIfNeeded()
             
         } completion: { (true) in
+            self.spinner.removeFromSuperview()
             self.setTitle("Login", for: .normal)
+            
         }
         
         

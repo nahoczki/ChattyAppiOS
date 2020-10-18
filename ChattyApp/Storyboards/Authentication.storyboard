@@ -177,11 +177,20 @@
                         <outlet property="errorLabel" destination="NFF-Cg-laJ" id="c8j-Pz-6B6"/>
                         <outlet property="loginButton" destination="qCe-xT-ZOC" id="KhI-hk-Oiu"/>
                         <outlet property="passTextField" destination="rSQ-Mn-Xdf" id="Ya3-K8-uVV"/>
+                        <segue destination="DrH-jz-mNo" kind="presentation" identifier="login" animates="NO" modalPresentationStyle="fullScreen" id="Fy0-VJ-Bdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJm-Xr-0jT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-482" y="-95"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="ARN-e1-3dF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="DrH-jz-mNo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BtP-hT-SOq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="-95"/>
         </scene>
     </scenes>
     <resources>

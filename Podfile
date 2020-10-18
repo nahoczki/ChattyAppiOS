@@ -8,6 +8,8 @@ target 'ChattyApp' do
   # Pods for ChattyApp
 
   pod 'Alamofire', '~> 5.2'
+  pod “SwiftyJSON”
+  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
 
   target 'ChattyAppTests' do
     inherit! :search_paths
