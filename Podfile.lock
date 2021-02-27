@@ -1,5 +1,10 @@
 PODS:
   - Alamofire (5.2.1)
+  - Realm (5.0.2):
+    - Realm/Headers (= 5.0.2)
+  - Realm/Headers (5.0.2)
+  - RealmSwift (5.0.2):
+    - Realm (= 5.0.2)
   - Socket.IO-Client-Swift (15.2.0):
     - Starscream (~> 3.1)
   - Starscream (3.1.1)
@@ -7,22 +12,27 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - RealmSwift
   - Socket.IO-Client-Swift (~> 15.2.0)
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Realm
+    - RealmSwift
     - Socket.IO-Client-Swift
     - Starscream
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Realm: 6b6f096671b64b04d08974177cabb2ff9343d153
+  RealmSwift: a3db6be0488bf3e1d5314c2956cefe98a65cdd01
   Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: bd7e3bae5964a74487846a8dd1b644fda9f3d4c8
+PODFILE CHECKSUM: d66bde92c9a568e5d53856106e862244d6ea8b71
 
 COCOAPODS: 1.9.3

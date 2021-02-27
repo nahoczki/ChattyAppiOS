@@ -1,19 +1,23 @@
 //
-//  LoginViewController.swift
+//  EmailRegisterViewController.swift
 //  ChattyApp
 //
-//  Created by Zoli Nahoczki on 10/13/20.
+//  Created by Zoli Nahoczki on 10/21/20.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class EmailRegisterViewController: UIViewController {
 
-    @IBOutlet weak var errorLabel: UILabel!
-    @IBOutlet weak var loginButton: CustomSpinnerButton!
-    
     @IBOutlet weak var emailTextField: UnderlinedTextField!
     @IBOutlet weak var passTextField: UnderlinedTextField!
+    @IBOutlet weak var confirmPassTextField: UnderlinedTextField!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    
+    var firstname : String!
+    var lastname : String!
     
     let api = ApiCalls()
     
@@ -28,8 +32,6 @@ class LoginViewController: UIViewController {
     }
     
     func setup() {
-        let screenSize: CGRect = UIScreen.main.bounds
-        loginButton.widthAnchor.constraint(equalToConstant: screenSize.width - (50 * 2)).isActive = true
         
         errorLabel.alpha = 0
         
@@ -45,6 +47,7 @@ class LoginViewController: UIViewController {
     func showErrorLabel(_ errorMessage: String) {
         errorLabel.text = errorMessage
         errorLabel.alpha = 1
+        print(errorMessage)
     }
     
     @objc private func textFieldDidStartEditing(_ sender: UnderlinedTextField) {
@@ -55,7 +58,7 @@ class LoginViewController: UIViewController {
         sender.stopEditing()
     }
     
-    @IBAction func loginPress(_ sender: CustomSpinnerButton) {
+    @IBAction func registerPress(_ sender: Any) {
         
         guard let email = emailTextField.text else {
             showErrorLabel("Email field cannot be empty")
@@ -67,33 +70,33 @@ class LoginViewController: UIViewController {
             return
         }
         
+        guard let confirmPass = confirmPassTextField.text else {
+            showErrorLabel("Confirm field cannot be empty")
+            return
+        }
+        
         let cleanedEmail = email.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        if (cleanedEmail.isEmpty || pass.isEmpty) {
+        if (cleanedEmail.isEmpty || pass.isEmpty || confirmPass.isEmpty) {
             showErrorLabel("One or more fields are empty")
             return
         }
         
-        sender.startLoading()
-        api.login(email: cleanedEmail, pass: pass) { (err) in
-            print("complete")
+        if (pass != confirmPass) {
+            showErrorLabel("Passwords do not match")
+            return
+        }
+        
+        api.register(firstname: firstname, lastname: lastname, email: cleanedEmail, pass: pass) { (err) in
             if let err = err {
                 self.showErrorLabel(err.message)
-                sender.stopLoading()
                 return
             }
             
-            print("LOGGED IN")
-            sender.stopLoading()
+            self.performSegue(withIdentifier: "unwind", sender: self)
             
-            self.performSegue(withIdentifier: "login", sender: self)
         }
     }
-    
-    @IBAction func unwind( _ seg: UIStoryboardSegue) {}
-    
-    
-    
     
 
     /*
@@ -106,16 +109,4 @@ class LoginViewController: UIViewController {
     }
     */
 
-}
-
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
 }

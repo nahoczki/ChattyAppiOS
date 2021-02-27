@@ -25,6 +25,10 @@
 		9C1EFDB22536360D003A044A /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDB12536360D003A044A /* UnderlinedTextField.swift */; };
 		9C1EFDBA25363668003A044A /* CustomSpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDB925363668003A044A /* CustomSpinnerButton.swift */; };
 		9C1EFDC325366492003A044A /* ApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EFDC225366492003A044A /* ApiCalls.swift */; };
+		9C6AF9482540A7F7001D8D5D /* NameRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF9472540A7F7001D8D5D /* NameRegisterViewController.swift */; };
+		9C6AF9502540AE79001D8D5D /* EmailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF94F2540AE79001D8D5D /* EmailRegisterViewController.swift */; };
+		9C6AF97125423BC1001D8D5D /* SendBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF97025423BC1001D8D5D /* SendBarViewController.swift */; };
+		9C783753253CD98800ED5AE7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C783752253CD98800ED5AE7 /* User.swift */; };
 		9CA930372539721600AC44DD /* SocketWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA930362539721600AC44DD /* SocketWorker.swift */; };
 		C2F9DF7C81979D30484548DC /* Pods_ChattyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D46EEEBB99BA2DA8026DBE /* Pods_ChattyAppTests.framework */; };
 		D6D1510A07132685D17C3E23 /* Pods_ChattyApp_ChattyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81163073C8350BD9502BC181 /* Pods_ChattyApp_ChattyAppUITests.framework */; };
@@ -77,6 +81,10 @@
 		9C1EFDB12536360D003A044A /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		9C1EFDB925363668003A044A /* CustomSpinnerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSpinnerButton.swift; sourceTree = "<group>"; };
 		9C1EFDC225366492003A044A /* ApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCalls.swift; sourceTree = "<group>"; };
+		9C6AF9472540A7F7001D8D5D /* NameRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegisterViewController.swift; sourceTree = "<group>"; };
+		9C6AF94F2540AE79001D8D5D /* EmailRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterViewController.swift; sourceTree = "<group>"; };
+		9C6AF97025423BC1001D8D5D /* SendBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendBarViewController.swift; sourceTree = "<group>"; };
+		9C783752253CD98800ED5AE7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9CA930362539721600AC44DD /* SocketWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketWorker.swift; sourceTree = "<group>"; };
 		9D91017C2E81A843DFF79BBF /* Pods-ChattyApp-ChattyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp-ChattyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ChattyApp-ChattyAppUITests/Pods-ChattyApp-ChattyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD9AD7CD2A105B4F42702CFB /* Pods-ChattyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyApp.debug.xcconfig"; path = "Target Support Files/Pods-ChattyApp/Pods-ChattyApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 				9C04077A25369C6C00C5355F /* MessagesTableViewController.swift */,
 				9C04078425379E0400C5355F /* ChatRoomViewController.swift */,
 				9C183F9C2537F6400059C7CC /* UsersViewController.swift */,
+				9C6AF97025423BC1001D8D5D /* SendBarViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 		9C1EFD62253616CE003A044A /* ChattyApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C783751253CD97800ED5AE7 /* Realm */,
 				9C1EFDC12536647F003A044A /* Networking */,
 				9C1EFDB0253635E5003A044A /* CustomComponents */,
 				9C1EFDA92536356C003A044A /* ViewControllers */,
@@ -222,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				9C1EFDAB253635AB003A044A /* LoginViewController.swift */,
+				9C6AF9472540A7F7001D8D5D /* NameRegisterViewController.swift */,
+				9C6AF94F2540AE79001D8D5D /* EmailRegisterViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -242,6 +254,14 @@
 				9CA930362539721600AC44DD /* SocketWorker.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		9C783751253CD97800ED5AE7 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				9C783752253CD98800ED5AE7 /* User.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		EC405D042E38B7FC4FBC9CBD /* Pods */ = {
@@ -501,12 +521,16 @@
 				9C04078B2537A0F000C5355F /* RecipientCell.swift in Sources */,
 				9C1EFD64253616CE003A044A /* AppDelegate.swift in Sources */,
 				9C04077B25369C6C00C5355F /* MessagesTableViewController.swift in Sources */,
+				9C783753253CD98800ED5AE7 /* User.swift in Sources */,
+				9C6AF9482540A7F7001D8D5D /* NameRegisterViewController.swift in Sources */,
 				9C0407802536CC0D00C5355F /* Placeholders.swift in Sources */,
+				9C6AF9502540AE79001D8D5D /* EmailRegisterViewController.swift in Sources */,
 				9CA930372539721600AC44DD /* SocketWorker.swift in Sources */,
 				9C0407932537A10F00C5355F /* SenderCell.swift in Sources */,
 				9C1EFDBA25363668003A044A /* CustomSpinnerButton.swift in Sources */,
 				9C1EFD66253616CE003A044A /* SceneDelegate.swift in Sources */,
 				9C1EFDC325366492003A044A /* ApiCalls.swift in Sources */,
+				9C6AF97125423BC1001D8D5D /* SendBarViewController.swift in Sources */,
 				9C1EFDB22536360D003A044A /* UnderlinedTextField.swift in Sources */,
 				9C04078525379E0400C5355F /* ChatRoomViewController.swift in Sources */,
 			);

@@ -6,41 +6,78 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 struct ChatUser {
     var id : String
     var firstName : String
     var lastName : String
+    
+    init(_ chatUser : JSON) {
+        self.id = chatUser["_id"].string!
+        self.firstName = chatUser["firstname"].string!
+        self.lastName = chatUser["lastname"].string!
+    }
+
 }
 
 struct Message {
-    var id : String
-    var user : ChatUser
+    var userId : String
     var content : String
-    var date : Date
+    
+    init(_ message : JSON) {
+        self.userId = message["userId"].string!
+        self.content = message["content"].string!
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
+    }
+    
+    init(userId : String, contents: String) {
+        self.userId = userId
+        self.content = contents
+    }
 }
 
 struct ChatRoom {
     var id : String
-    var recipient : ChatUser
+    var users : Array<ChatUser>
     var messages : Array<Message>
+    
+    init(_ chatRoom : JSON) {
+        self.id = chatRoom["_id"].string!
+        self.users = []
+        self.messages = []
+        
+        let givenUsers = chatRoom["users"].array!
+        let givenMessages = chatRoom["messages"].array!
+        
+        for (user) in givenUsers {
+            self.users.append(ChatUser(user))
+        }
+        
+        for (message) in givenMessages {
+            self.messages.append(Message(message))
+        }
+    }
+    
+    func getRecipient(loggedUser : User) -> ChatUser? {
+        for user in self.users {
+            if user.id != loggedUser.id {
+                return user
+            }
+        }
+        
+        return nil
+    }
+    
+    func getUser(_ id: String) -> ChatUser? {
+        for user in self.users {
+            if id != user.id {
+                return user
+            }
+        }
+        
+        return nil
+    }
 }
-
-struct User {
-    var id : String
-    var firstName : String
-    var lastName : String
-}
-
-let user = User(id: "1", firstName: "zoli", lastName: "ye")
-
-let zoli = ChatUser(id: "1", firstName: "Zoli", lastName: "Nahoczki")
-let john = ChatUser(id: "2", firstName: "John", lastName: "Doe")
-
-let chatRooms : Array<ChatRoom> = [
-    ChatRoom(id: "1", recipient: john, messages: [
-        Message(id: "1", user: zoli, content: "Hi", date: Date()),
-        Message(id: "2", user: john, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", date: Date())
-    ])
-
-]

@@ -19,15 +19,19 @@ class ChatRoomCell : UITableViewCell {
 
 class MessagesTableViewController: UITableViewController {
     
-    let socket = SocketWorker.shared
+    var loggedUser : User?
+
+    var chatRooms : Array<ChatRoom> = []
+    let api = ApiCalls()
+    //let socket = SocketWorker.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        socket.connectSocket { [self] (b) in
-            print(b)
-            
-        }
+        loggedUser = realmHandler.objects(User.self)[0]
+//        socket.connectSocket { [self] (b) in
+//            print(b)
+//            
+//        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -35,13 +39,20 @@ class MessagesTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.api.getRooms { (rooms, err) in
+            if let err = err {
+                print(err)
+            }
+            
+            self.chatRooms = rooms
+            self.tableView.reloadData()
+            
+        }
+    }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -55,7 +66,7 @@ class MessagesTableViewController: UITableViewController {
         alert.addAction(UIAlertAction(title: "Yes", style: .default,handler: { action in
             
             UserDefaults.standard.removeObject(forKey: "jwt-token")
-            
+            self.loggedUser!.deleteFromRealm()
             let rootController = UIStoryboard(name: "Authentication", bundle: Bundle.main).instantiateInitialViewController()
             rootController!.modalPresentationStyle = .fullScreen
             self.present(rootController!, animated: false, completion: nil)
@@ -71,14 +82,21 @@ class MessagesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "room", for: indexPath) as! ChatRoomCell
         
         let room = chatRooms[indexPath.row]
+        let recipient = room.getRecipient(loggedUser: loggedUser!)
         
         cell.chatRoom = room
-        cell.recipientName.text = "\(room.recipient.firstName) \(room.recipient.lastName)"
+        
+        cell.recipientName.text = "\(recipient!.firstName) \(recipient!.lastName)"
         
         //Array might be empty, handle
-        cell.recentMessageLabel.text = "\(room.messages.last?.user.firstName ?? ""): \(room.messages.last?.content ?? "")"
+        let recentMessage = room.messages.last
+        if let recentMessage = recentMessage {
+            let recentMessageUser = room.getUser(recentMessage.userId)
+            
+            cell.recentMessageLabel.text = "\(recentMessageUser!.firstName): \(recentMessage.content)"
+        }
 
-        let url = URL(string: "https://ui-avatars.com/api/?name=\(room.recipient.firstName)+\(room.recipient.lastName)")!
+        let url = URL(string: "https://ui-avatars.com/api/?name=\(recipient!.firstName)+\(recipient!.lastName)")!
         
         cell.avatarView.load(url: url)
         cell.avatarView.layer.cornerRadius = cell.avatarView.frame.height / 2
@@ -98,7 +116,7 @@ class MessagesTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let dest = segue.destination as? ChatRoomViewController {
+        if let dest = segue.destination as? SendBarViewController {
             dest.chatRoom = chatRooms[self.tableView.indexPathForSelectedRow!.row]
         }
         // Get the new view controller using segue.destination.

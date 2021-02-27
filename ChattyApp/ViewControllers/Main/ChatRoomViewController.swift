@@ -10,6 +10,7 @@ import UIKit
 class ChatRoomViewController: UITableViewController {
     
     var chatRoom : ChatRoom!
+    var loggedUser : User?
     
     let recipientCellId = "recipient"
     let senderCellId = "sender"
@@ -17,8 +18,12 @@ class ChatRoomViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loggedUser = realmHandler.objects(User.self)[0]
+        
         tableView.register(RecipientCell.self, forCellReuseIdentifier: recipientCellId)
         tableView.register(SenderCell.self, forCellReuseIdentifier: senderCellId)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(newMessage(notification:)), name: NSNotification.Name("MESSAGE"), object: nil)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -27,6 +32,15 @@ class ChatRoomViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         
+    }
+    
+    @objc func newMessage(notification: NSNotification) {
+        print("new message")
+        
+        if let message = notification.userInfo?["message"] as? Message {
+            self.chatRoom.messages.append(message)
+            self.tableView.reloadData()
+        }
     }
 
     // MARK: - Table view data source
@@ -41,10 +55,10 @@ class ChatRoomViewController: UITableViewController {
         
         let message = chatRoom.messages[indexPath.row]
         
-        print(message.user.id)
-        print(user.id)
+        //print(message.user.id)
+        //print(user.id)
         
-        if message.user.id != user.id {
+        if message.userId != loggedUser!.id {
             let cell = tableView.dequeueReusableCell(withIdentifier: recipientCellId, for: indexPath) as! RecipientCell
             print(recipientCellId)
             cell.messageLabel.text = message.content

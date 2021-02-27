@@ -12,10 +12,12 @@ class UserCell : UITableViewCell {
     @IBOutlet weak var nameTextField: UILabel!
     @IBOutlet weak var profilePictureView: UIImageView!
     
-    
+    var user : User!
 }
 
 class UsersViewController: UITableViewController {
+    
+    @IBOutlet weak var headerUIView: UIView!
     
     var users : Array<User> = []
     
@@ -41,6 +43,10 @@ class UsersViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return users.count
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Users"
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "user", for: indexPath) as! UserCell
@@ -53,8 +59,32 @@ class UsersViewController: UITableViewController {
         
         cell.profilePictureView.load(url: url)
         cell.profilePictureView.layer.cornerRadius = cell.profilePictureView.frame.height / 2
+        cell.user = user
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell = tableView.cellForRow(at: indexPath) as! UserCell
+        
+        
+        
+        let alert = UIAlertController(title: "Room Creation", message: "Create room with \(selectedCell.user.firstName)?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "No", style: .cancel,handler: {action in}))
+        alert.addAction(UIAlertAction(title: "Yes", style: .default,handler: { action in
+            
+            self.api.createRoom(with: selectedCell.user.id) { (err) in
+                if let err = err {
+                    print(err)
+                    tableView.deselectRow(at: indexPath, animated: true)
+                    return
+                }
+                tableView.deselectRow(at: indexPath, animated: true)
+                self.dismiss(animated: true)
+            
+            }
+        }))
+        self.present(alert, animated: true)
     }
 
     /*

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iUl-Aa-aYY">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jUL-Ve-9fr">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,23 +14,23 @@
             <objects>
                 <viewController id="iUl-Aa-aYY" customClass="LoginViewController" customModule="ChattyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oeP-Oh-QIV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ham-GJ-BGv">
-                                <rect key="frame" x="30" y="154" width="354" height="658"/>
+                                <rect key="frame" x="30" y="154" width="315" height="463"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="N0a-kU-i3e">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gaT-zG-CWf">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="40.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="40.5"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
                                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="zaq-Vy-sqe">
-                                                <rect key="frame" x="0.0" y="40.5" width="354" height="23"/>
+                                                <rect key="frame" x="0.0" y="40.5" width="315" height="23"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <nil key="highlightedColor"/>
@@ -38,21 +38,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oZ5-oS-1ks">
-                                        <rect key="frame" x="0.0" y="192" width="354" height="212.5"/>
+                                        <rect key="frame" x="0.0" y="94.5" width="315" height="212.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xB3-Fh-mCf">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="71.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xpm-oL-JLZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="71.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhe-C3-zCM">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="26.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="26.5"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuj-LL-BiH" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="26.5" width="354" height="45"/>
+                                                                <rect key="frame" x="0.0" y="26.5" width="315" height="45"/>
                                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                                 <color key="tintColor" systemColor="systemPurpleColor"/>
                                                                 <constraints>
@@ -67,18 +67,18 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="mGB-Lw-4Kk">
-                                                <rect key="frame" x="0.0" y="96.5" width="354" height="116"/>
+                                                <rect key="frame" x="0.0" y="96.5" width="315" height="116"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="YSl-Pv-dSh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="71"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="71"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYo-Ee-iCI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="26"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="26"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSQ-Mn-Xdf" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="26" width="354" height="45"/>
+                                                                <rect key="frame" x="0.0" y="26" width="315" height="45"/>
                                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                                 <color key="tintColor" systemColor="systemPurpleColor"/>
                                                                 <color key="textColor" systemColor="systemPurpleColor"/>
@@ -88,10 +88,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="0Vc-R0-zoB">
-                                                        <rect key="frame" x="0.0" y="71" width="354" height="45"/>
+                                                        <rect key="frame" x="0.0" y="71" width="315" height="45"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-yy-Kr5">
-                                                                <rect key="frame" x="240" y="0.0" width="114" height="45"/>
+                                                                <rect key="frame" x="201" y="0.0" width="114" height="45"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                                                 <state key="normal" title="Forgot Password">
                                                                     <color key="titleColor" systemColor="systemPurpleColor"/>
@@ -109,10 +109,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bz3-Zt-Cf9">
-                                        <rect key="frame" x="0.0" y="533" width="354" height="125"/>
+                                        <rect key="frame" x="0.0" y="338" width="315" height="125"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCe-xT-ZOC" customClass="CustomSpinnerButton" customModule="ChattyApp" customModuleProvider="target">
-                                                <rect key="frame" x="153.5" y="0.0" width="47" height="50"/>
+                                                <rect key="frame" x="134" y="0.0" width="47" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="r6N-vD-KmY"/>
@@ -126,7 +126,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVD-im-PB3">
-                                                <rect key="frame" x="72.5" y="50" width="209" height="46"/>
+                                                <rect key="frame" x="53" y="50" width="209" height="46"/>
                                                 <state key="normal" title="Don't have an account? Create">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Don't have an account?">
@@ -151,9 +151,12 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="GHP-tM-jhj" kind="show" id="Kpa-Fh-7Uz"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NFF-Cg-laJ">
-                                                <rect key="frame" x="159" y="96" width="36" height="29"/>
+                                                <rect key="frame" x="139.5" y="96" width="36" height="29"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                 <nil key="highlightedColor"/>
@@ -172,6 +175,11 @@
                             <constraint firstItem="aZC-7V-7Qw" firstAttribute="bottom" secondItem="ham-GJ-BGv" secondAttribute="bottom" constant="50" id="uBi-Vk-0oS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="MFa-Xw-Gnc">
+                        <barButtonItem key="backBarButtonItem" title=" " id="vaJ-p8-0GU">
+                            <color key="tintColor" systemColor="systemPurpleColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="kuj-LL-BiH" id="vVm-2V-evJ"/>
                         <outlet property="errorLabel" destination="NFF-Cg-laJ" id="c8j-Pz-6B6"/>
@@ -182,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJm-Xr-0jT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-482" y="-95"/>
+            <point key="canvasLocation" x="427.536231884058" y="-95.089285714285708"/>
         </scene>
         <!--Main-->
         <scene sceneID="ARN-e1-3dF">
@@ -190,7 +198,316 @@
                 <viewControllerPlaceholder storyboardName="Main" id="DrH-jz-mNo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BtP-hT-SOq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="-95"/>
+            <point key="canvasLocation" x="1073.913043478261" y="-95.089285714285708"/>
+        </scene>
+        <!--Name Register View Controller-->
+        <scene sceneID="82k-L7-hAY">
+            <objects>
+                <viewController id="GHP-tM-jhj" customClass="NameRegisterViewController" customModule="ChattyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJl-GO-fxv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2aa-Po-yQM">
+                                <rect key="frame" x="30" y="74" width="315" height="347.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="PGD-fP-Tlz">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="40.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="L9B-wO-Chz">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="40.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Nzs-uT-PYN">
+                                        <rect key="frame" x="0.0" y="70.5" width="315" height="168"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="dJB-9r-S5G">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="dWB-Q0-Hyd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izc-Fe-4ba">
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="26.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xm7-t0-QU1" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="26.5" width="315" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="9Mq-2k-Lay"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ZO1-Fm-owH">
+                                                <rect key="frame" x="0.0" y="96.5" width="315" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="YRc-hd-7Cr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lastname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VP-vv-aYm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="26.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vge-eW-pha" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="26.5" width="315" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="AId-aw-ysG"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8W1-8N-vRz">
+                                        <rect key="frame" x="0.0" y="268.5" width="315" height="79"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dao-oR-fcw" customClass="CustomSpinnerButton" customModule="ChattyApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="AaP-md-Sgh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginPress:" destination="iUl-Aa-aYY" eventType="touchUpInside" id="A9t-yy-SV5"/>
+                                                    <action selector="nextClick:" destination="GHP-tM-jhj" eventType="touchUpInside" id="rQt-L1-zfC"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NmI-t2-l7c">
+                                                <rect key="frame" x="0.0" y="50" width="315" height="29"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ugv-cB-US1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2aa-Po-yQM" firstAttribute="top" secondItem="ugv-cB-US1" secondAttribute="top" constant="30" id="5oB-o9-oZU"/>
+                            <constraint firstItem="ugv-cB-US1" firstAttribute="trailing" secondItem="2aa-Po-yQM" secondAttribute="trailing" constant="30" id="M00-iL-uEK"/>
+                            <constraint firstItem="ugv-cB-US1" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="2aa-Po-yQM" secondAttribute="bottom" constant="250" id="XJK-a4-Zwu"/>
+                            <constraint firstItem="2aa-Po-yQM" firstAttribute="leading" secondItem="ugv-cB-US1" secondAttribute="leading" constant="30" id="lX9-9k-ipR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bz7-ng-dOr">
+                        <barButtonItem key="backBarButtonItem" title=" " id="WZx-xv-Bg8">
+                            <color key="tintColor" systemColor="systemPurpleColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="errorLabel" destination="NmI-t2-l7c" id="4Iz-Jo-nLC"/>
+                        <outlet property="firstNameTextField" destination="Xm7-t0-QU1" id="HHh-e4-Uzt"/>
+                        <outlet property="lastNameTextField" destination="vge-eW-pha" id="qZh-ri-H5Y"/>
+                        <segue destination="NUe-du-DHD" kind="show" identifier="next" id="Y05-wi-97B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UkA-xH-vRT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="652"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PSo-3Y-3Xq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jUL-Ve-9fr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dE0-Xw-Niw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iUl-Aa-aYY" kind="relationship" relationship="rootViewController" id="hrM-GC-1Vb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xZX-PG-2Yi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482.60869565217394" y="-95.089285714285708"/>
+        </scene>
+        <!--Email Register View Controller-->
+        <scene sceneID="qNS-8b-8WU">
+            <objects>
+                <viewController id="NUe-du-DHD" customClass="EmailRegisterViewController" customModule="ChattyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wnM-xQ-mgD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="580-xM-Fj5">
+                                <rect key="frame" x="30" y="74" width="315" height="465"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ywf-Tl-MLi">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="40.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="drc-Vh-V3w">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="40.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="xSO-aH-jvO">
+                                        <rect key="frame" x="0.0" y="70.5" width="315" height="264.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="lg2-EZ-30i">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="m1M-xw-b4A">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZ5-m5-Ywl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="26.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOE-A6-vhc" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="26.5" width="315" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="yqO-YD-uJF"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1v0-9a-El1">
+                                                <rect key="frame" x="0.0" y="96.5" width="315" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="y5I-wM-y3h">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zl-0v-L7l">
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="26.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mto-5v-nLP" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="26.5" width="315" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="AqK-gb-gDf"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="email"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="R9K-dF-B9o">
+                                                <rect key="frame" x="0.0" y="193" width="315" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Rn4-e1-DZn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJF-ou-OZa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="26.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afy-aA-KNM" customClass="UnderlinedTextField" customModule="ChattyApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="26.5" width="315" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="JVi-nC-zB6"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="email"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="H9n-f1-2Pl">
+                                        <rect key="frame" x="0.0" y="365" width="315" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eei-wj-K5F" customClass="CustomSpinnerButton" customModule="ChattyApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ohk-au-7xZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                <state key="normal" title="Register">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginPress:" destination="iUl-Aa-aYY" eventType="touchUpInside" id="HJv-ej-aWn"/>
+                                                    <action selector="registerPress:" destination="NUe-du-DHD" eventType="touchUpInside" id="4ua-ch-DGO"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="68B-ia-2Ie">
+                                                <rect key="frame" x="0.0" y="50" width="315" height="50"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vVm-qj-D4e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vVm-qj-D4e" firstAttribute="trailing" secondItem="580-xM-Fj5" secondAttribute="trailing" constant="30" id="DVh-lR-Nox"/>
+                            <constraint firstItem="580-xM-Fj5" firstAttribute="leading" secondItem="vVm-qj-D4e" secondAttribute="leading" constant="30" id="VQT-OL-g9A"/>
+                            <constraint firstItem="vVm-qj-D4e" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="580-xM-Fj5" secondAttribute="bottom" constant="250" id="rBQ-2h-Wu7"/>
+                            <constraint firstItem="580-xM-Fj5" firstAttribute="top" secondItem="vVm-qj-D4e" secondAttribute="top" constant="30" id="rim-4W-rmr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="q2w-jq-I8Q"/>
+                    <connections>
+                        <outlet property="confirmPassTextField" destination="afy-aA-KNM" id="rpx-6s-NH9"/>
+                        <outlet property="emailTextField" destination="qOE-A6-vhc" id="djQ-25-v8b"/>
+                        <outlet property="errorLabel" destination="68B-ia-2Ie" id="034-oQ-6tX"/>
+                        <outlet property="passTextField" destination="mto-5v-nLP" id="AVC-Y8-EO5"/>
+                        <segue destination="0Ju-A4-7Br" kind="unwind" identifier="unwind" unwindAction="unwind:" id="fV2-0U-8hf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pr7-CM-M2U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0Ju-A4-7Br" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1178" y="652"/>
         </scene>
     </scenes>
     <resources>

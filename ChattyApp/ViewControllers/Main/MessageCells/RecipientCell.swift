@@ -30,7 +30,7 @@ class RecipientCell: UITableViewCell {
             messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32),
             messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32),
             messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-            messageLabel.widthAnchor.constraint(equalToConstant: 250),
+            messageLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 250),
             
             bubbleBackground.topAnchor.constraint(equalTo: messageLabel.topAnchor, constant: -16),
             bubbleBackground.bottomAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: 16),
