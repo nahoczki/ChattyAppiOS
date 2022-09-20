@@ -1,10 +1,3 @@
-# Hair iOS
+# Chat App
 
-Chatty iOS component
-
-## Setup
-
-
-```bash
-pod install
-```
+Checkout the backend this app uses! [BE](https://github.com/nahoczki/ChatAppBackEnd)
